@@ -1,6 +1,6 @@
 function x  = cvxToOptimize( He, fbb, lamda )
 n = size(fbb,1);
-cvx_begin
+cvx_begin quiet
         variable x(n)
         minimize(norm(He*x-He*fbb,'fro'))
         subject to

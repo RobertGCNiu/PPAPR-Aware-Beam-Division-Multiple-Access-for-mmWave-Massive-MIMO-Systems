@@ -14,7 +14,7 @@ for c=1:size(Fbb_all, 1)
         count_t = count_t+1;
       %  if abs(Fbb_all(r,c,x))<10
       if r~=c
-    range_fbb(count_t) = abs(Fbb_all(c,r,x));
+        range_fbb(count_t) = abs(Fbb_all(c,r,x));
         count_1 = count_1+1;
       end
        % end
